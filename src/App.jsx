@@ -7,7 +7,8 @@ import Proceda from "./assets/proceda.png";
 
 const BIRTH_DATE = new Date(1987, 11, 10);
 const NOW_DATE = Date.now();
-const COST_PER_FOOD_PER_SECOND = 14 / 24 / 60 / 60;
+const COST_PER_FOOD = 7;
+const COST_PER_FOOD_PER_SECOND = (COST_PER_FOOD * 2) / 24 / 60 / 60;
 const UPDATE_INTERVAL = 2000;
 const VALOR_DOLAR_BLUE = 1050;
 const ANIMATION_DURATION = UPDATE_INTERVAL / 1000 / 2;
@@ -113,7 +114,8 @@ function App() {
               style: "currency",
               currency: "ARS",
             })}{" "}
-            obtenido desde 'https://dolarapi.com'
+            obtenido desde 'https://dolarapi.com'<br/>
+            Calculado en un gasto aprox. de ${COST_PER_FOOD} dólares por comida en 2 comidas por día.
           </p>
           <div className="maslaton-img">
             <img src={Proceda} />
@@ -121,7 +123,12 @@ function App() {
         </>
       )}
 
-      <p className="info">Creado por <a href="https://github.com/joaquinBeceiro" target="_blank">Joaquin</a></p>
+      <p className="info">
+        Creado por{" "}
+        <a href="https://github.com/joaquinBeceiro" target="_blank">
+          Joaquin
+        </a>
+      </p>
     </div>
   );
 }
