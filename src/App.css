@@ -1,0 +1,78 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  max-width: 1280px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.info {
+  font-size: 70%;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+.counter {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+}
+
+.content {
+  padding: 20px 0;
+  display: flex;
+}
+
+.counter-container {
+  flex: 1;
+}
+
+.maslaton-img {
+  width: 30%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 30%;
+  position: relative;
+  border-radius: 50%;
+  margin: 50px auto 30px auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
