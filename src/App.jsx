@@ -120,6 +120,8 @@ function App() {
           </div>
         </>
       )}
+
+      <p className="info">Creado por <a href="https://github.com/joaquinBeceiro" target="_blank">Joaquin</a></p>
     </div>
   );
 }
