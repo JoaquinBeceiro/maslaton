@@ -109,13 +109,13 @@ function App() {
             </div>
           </div>
           <p className="info">
-            Valor del dolar:{" "}
+            (*) Valor del dolar:{" "}
             {dolarValue.toLocaleString("es-AR", {
               style: "currency",
               currency: "ARS",
             })}{" "}
             obtenido desde 'https://dolarapi.com'<br/>
-            Calculado en un gasto aprox. de ${COST_PER_FOOD} dólares por comida en 2 comidas por día.
+            (*) Calculado en un gasto aprox. de ${COST_PER_FOOD} dólares por comida en 2 comidas por día.
           </p>
           <div className="maslaton-img">
             <img src={Proceda} />
