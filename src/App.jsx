@@ -118,7 +118,7 @@ function App() {
             (*) Calculado en un gasto aprox. de ${COST_PER_FOOD} dólares por comida en 2 comidas por día.
           </p>
           <div className="maslaton-img">
-            <img src={Proceda} />
+            <img src={Proceda} alt="Carlos Maslaton" />
           </div>
         </>
       )}
