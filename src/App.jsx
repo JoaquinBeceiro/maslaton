@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 import YouTube from "react-youtube";
 import Proceda from "./assets/proceda.png";
 
-const BIRTH_DATE = new Date(1987, 11, 10);
+const START_DATE = new Date(1970, 11, 19);
 const NOW_DATE = Date.now();
 const COST_PER_FOOD = 7;
 const COST_PER_FOOD_PER_SECOND = (COST_PER_FOOD * 2) / 24 / 60 / 60;
@@ -53,12 +53,12 @@ function App() {
   }, [dolarValue]);
 
   const totalPrevCost =
-    ((dateDiff(now, BIRTH_DATE) - UPDATE_INTERVAL) / 1000) *
+    ((dateDiff(now, START_DATE) - UPDATE_INTERVAL) / 1000) *
     COST_PER_FOOD_PER_SECOND *
     100;
 
   const totalCost =
-    (dateDiff(now, BIRTH_DATE) / 1000) * COST_PER_FOOD_PER_SECOND * 100;
+    (dateDiff(now, START_DATE) / 1000) * COST_PER_FOOD_PER_SECOND * 100;
 
   return (
     <div className="container">
@@ -114,8 +114,10 @@ function App() {
               style: "currency",
               currency: "ARS",
             })}{" "}
-            obtenido desde 'https://dolarapi.com'<br/>
-            (*) Calculado en un gasto aprox. de ${COST_PER_FOOD} dólares por comida en 2 comidas por día.
+            obtenido desde 'https://dolarapi.com'.
+            <br />
+            (*) Calculado en un gasto aprox. de ${COST_PER_FOOD} dólares por
+            comida en 2 comidas por día.
           </p>
           <div className="maslaton-img">
             <img src={Proceda} alt="Carlos Maslaton" />
