@@ -7,7 +7,7 @@ import Proceda from "./assets/proceda.png";
 
 const START_DATE = new Date(1970, 11, 19);
 const NOW_DATE = Date.now();
-const COST_PER_FOOD = 7;
+const COST_PER_FOOD = 38;
 const COST_PER_FOOD_PER_SECOND = (COST_PER_FOOD * 2) / 24 / 60 / 60;
 const UPDATE_INTERVAL = 2000;
 const VALOR_DOLAR_BLUE = 1050;
@@ -117,7 +117,7 @@ function App() {
             obtenido desde 'https://dolarapi.com'.
             <br />
             (*) Calculado en un gasto aprox. de ${COST_PER_FOOD} dólares por
-            comida en 2 comidas por día.
+            comida en 2 comidas por día (<a href="https://x.com/CarlosMaslaton/status/1775252570660864171?s=20" target="_blank">validado por Maslatón</a>).
           </p>
           <div className="maslaton-img">
             <img src={Proceda} alt="Carlos Maslaton" />
